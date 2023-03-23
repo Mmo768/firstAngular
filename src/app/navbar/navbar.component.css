@@ -1,0 +1,12 @@
+/* <!-- ========= start navbar ========= --> */
+.nav-link{
+    color: white !important;
+    cursor: pointer;
+    padding: 1rem .5rem;
+}
+.active{
+    background-color: #1abc9c !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
+/* <!-- ========= end navbar ========= --> */

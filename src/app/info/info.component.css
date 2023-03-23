@@ -1,0 +1,17 @@
+/* <!-- ========= start info ========= --> */
+.info ul li a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .3s 0s all linear;
+}
+.info ul li a:hover{
+    color: #2c3e50;
+    background-color: white;
+}
+/* <!-- ========= end info ========= --> */

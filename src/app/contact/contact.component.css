@@ -1,0 +1,10 @@
+/* <!-- ========= start contact ========= --> */
+.contact .message{
+    height: 150px;
+}
+.contact ul{
+    margin-left: 30px;
+    list-style: circle;
+    list-style-type: disc;
+}
+/* <!-- ========= end contact ========= --> */

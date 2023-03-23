@@ -1,0 +1,60 @@
+    <!-- ========= start portfolio ========= -->
+    <section class="portfolio p-5">
+        <div class="container g-5">
+            <h2 class="text-p fs-45 lh-40 fw-700 ff-m text-center">PORTFOLIO</h2>
+            <div class="custom">
+                <div class="image">
+                    <i class="fa-solid fa-star text-p fs-3"></i>
+                </div>
+                <span></span>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4" *ngFor="let el of gallery">
+                    <div class="box rounded-2 overflow-hidden  position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="modalShow(el)">
+                        <img class="w-100" [src]="el.srcImg" alt="photo">
+                        <div class="icon">
+                            <i class="fa-solid fa-plus display-4 text-white fw-900"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-xmark fs-1 fw-700 text-main"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+
+                <h2 class="text-p fs-45 lh-40 fw-700 ff-m text-center">{{modalTitle}}</h2>
+                <div class="custom">
+                    <div class="image">
+                        <i class="fa-solid fa-star text-p fs-3"></i>
+                    </div>
+                    <span></span>
+                </div>
+
+                <div class="image">
+                    <img class="w-100" [src]="modalSrc" alt="photo">
+                </div>
+                <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+
+            </div>
+            <div class="modal-footer text-center d-block">
+                <button type="button" class="btn bg-main text-white" data-bs-dismiss="modal"><i class="fas fa-xmark me-1"></i>Close Window</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+    <!-- ========= end portfolio ========= -->
